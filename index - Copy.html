@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coaching Institute Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Coaching Institute Registration Form</h2>
+      <form id="registrationForm" onsubmit="return validateForm()">
+        <!-- Personal Information -->
+        <div class="container" id="Presonal">
+          <h3>Presonal Details</h3>
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Enter your full name"
+            />
+            <div id="nameError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <div id="emailError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="mobile">Mobile Number</label>
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Enter your mobile number"
+            />
+            <div id="mobileError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" />
+            <div id="dobError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Residential Address</label>
+            <textarea
+              id="address"
+              rows="3"
+              placeholder="Enter your full address"
+            ></textarea>
+            <div id="addressError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Enter your city" />
+            <div id="cityError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="pinCode">Pin Code</label>
+            <input type="text" id="pinCode" placeholder="Enter your pin code" />
+            <div id="pinCodeError" class="error"></div>
+          </div>
+        </div>
+
+        <div class="container" id="Academic">
+          <!-- Academic Details -->
+          <h3>Academic Details</h3>
+          <div class="form-group">
+            <label for="qualification">Last Completed Qualification</label>
+            <select id="qualification">
+              <option value="">Select Qualification</option>
+              <option value="10th">10th</option>
+              <option value="12th">12th</option>
+              <option value="Graduate">Graduate</option>
+              <option value="Postgraduate">Postgraduate</option>
+            </select>
+            <div id="qualificationError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="percentage"
+              >Percentage/Grade in Last Qualification</label
+            >
+            <input
+              type="text"
+              id="percentage"
+              placeholder="Enter your percentage or grade"
+            />
+            <div id="percentageError" class="error"></div>
+          </div>
+
+          <!-- Course Information -->
+          <div class="form-group">
+            <label for="course">Preferred Course</label>
+            <select id="course">
+              <option value="">Select Course</option>
+              <option value="IIT-JEE">IIT-JEE</option>
+              <option value="NEET">NEET</option>
+              <option value="Banking Exams">Banking Exams</option>
+              <option value="UPSC">UPSC</option>
+            </select>
+            <div id="courseError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="batchTiming">Batch Timing Preference</label>
+            <select id="batchTiming">
+              <option value="">Select Batch Timing</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+              <option value="Weekend">Weekend</option>
+            </select>
+            <div id="batchTimingError" class="error"></div>
+          </div>
+
+          <!-- Address -->
+
+          <!-- Guardian Details -->
+          <div class="form-group">
+            <label for="guardianName">Guardian’s Full Name</label>
+            <input
+              type="text"
+              id="guardianName"
+              placeholder="Enter guardian’s full name"
+            />
+            <div id="guardianNameError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="guardianContact">Guardian’s Contact Number</label>
+            <input
+              type="text"
+              id="guardianContact"
+              placeholder="Enter guardian’s contact number"
+            />
+            <div id="guardianContactError" class="error"></div>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="form-group">
+            <label for="source">How did you hear about us?</label>
+            <select id="source">
+              <option value="">Select an option</option>
+              <option value="Friends">Friends</option>
+              <option value="Online Ad">Online Ad</option>
+              <option value="Newspaper">Newspaper</option>
+              <option value="Social Media">Social Media</option>
+              <option value="Other">Other</option>
+            </select>
+            <div id="sourceError" class="error"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="requirements">Special Requirements (optional)</label>
+            <textarea
+              id="requirements"
+              rows="3"
+              placeholder="Enter any special requirements"
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
